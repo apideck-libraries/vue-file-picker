@@ -24,7 +24,7 @@ Pass the JWT you got from the Vault session to `@apideck/vue-file-picker`, call 
 
 ```vue
 <script setup lang="ts">
-import { VueVault } from '@apideck/vue-file-picker';
+import { FilePicker } from '@apideck/vue-file-picker';
 
 const sessionJwt = 'REPLACE_WITH_SESSION_TOKEN';
 
@@ -35,13 +35,13 @@ function onSelect(file: File) {
 
 <template>
   <main>
-    <VueVault
+    <FilePicker
       :token="sessionJwt"
       :on-select="onSelect"
       v-slot="filePickerProps"
     >
       <button @click="filePickerProps.open()">Open</button>
-    </VueVault>
+    </FilePicker>
   </main>
 </template>
 ```
@@ -50,7 +50,7 @@ If you want to get notified when the modal opens and closes, you can provide the
 
 ```vue
 <script setup lang="ts">
-import { VueVault } from '@apideck/vue-file-picker';
+import { FilePicker } from '@apideck/vue-file-picker';
 
 const sessionJwt = 'REPLACE_WITH_SESSION_TOKEN';
 
@@ -69,7 +69,7 @@ function onReady() {
 
 <template>
   <main>
-    <VueVault
+    <FilePicker
       :token="sessionJwt"
       :on-close="onClose"
       :on-ready="onReady"
@@ -77,7 +77,7 @@ function onReady() {
       v-slot="filePickerProps"
     >
       <button @click="filePickerProps.open()">Open</button>
-    </VueVault>
+    </FilePicker>
   </main>
 </template>
 ```
