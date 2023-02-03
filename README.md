@@ -20,7 +20,7 @@ Before opening the Vault modal with `@apideck/vue-file-picker`, you need to crea
 
 ## Usage
 
-Pass the JWT you got from the Vault session to `@apideck/vue-file-picker`, call the slot prop `open` to open the Vault modal.
+Pass the JWT you got from the Vault session to `@apideck/vue-file-picker`, call the slot prop `open` to open the FilePicker modal.
 
 ```vue
 <script setup lang="ts">
