@@ -1,10 +1,10 @@
 # Vue FilePicker
 
-A Vue component to embed [Apideck FilePicker](https://www.apideck.com/samples/file-picker) in any Vue application.
+A Vue component to embed [Apideck FilePicker](https://www.apideck.com/samples/file-picker) in a Vue application.
 
 <img src="./screenshot.png" width="100%" />
 
-**Vue FilePicker** | [FilePicker JS](https://github.com/apideck-libraries/file-picker-js) | [React FilePicker](https://github.com/apideck-libraries/file-picker)
+[FilePicker JS](https://github.com/apideck-libraries/file-picker-js) | [React FilePicker](https://github.com/apideck-libraries/file-picker) | **Vue FilePicker**
 
 ## Installation
 
@@ -21,32 +21,6 @@ Before opening the Vault modal with `@apideck/vue-file-picker`, you need to crea
 ## Usage
 
 Pass the JWT you got from the Vault session to `@apideck/vue-file-picker`, call the slot prop `open` to open the Vault modal.
-
-```vue
-<script setup lang="ts">
-import { VueVault } from '@apideck/vue-file-picker';
-
-const sessionJwt = 'REPLACE_WITH_SESSION_TOKEN';
-
-function onSelect(file: File) {
-  console.log('selected file:', file);
-}
-</script>
-
-<template>
-  <main>
-    <VueVault
-      :token="sessionJwt"
-      :on-select="onSelect"
-      v-slot="filePickerProps"
-    >
-      <button @click="filePickerProps.open()">Open</button>
-    </VueVault>
-  </main>
-</template>
-```
-
-If you want to only show integrations for a single Unified API, you can do that by passing the `unified-api` prop. If you want to open Vault for only a single integration, you can provide the `service-id` prop.
 
 ```vue
 <script setup lang="ts">
