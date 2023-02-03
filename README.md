@@ -2,9 +2,9 @@
 
 A Vue component to embed [Apideck FilePicker](https://www.apideck.com/samples/file-picker) in any Vue application.
 
-<img src="https://developers.apideck.com/_next/image?url=%2Ffile-picker-guide.png&w=3840&q=75" width="100%" />
+<img src="./screenshot.png" width="100%" />
 
-**Vue FilePicker** | [React FilePicker](https://github.com/apideck-libraries/file-picker) | [FilePicker JS](https://github.com/apideck-libraries/file-picker-js)
+**Vue FilePicker** | [FilePicker JS](https://github.com/apideck-libraries/file-picker-js) | [React FilePicker](https://github.com/apideck-libraries/file-picker)
 
 ## Installation
 
