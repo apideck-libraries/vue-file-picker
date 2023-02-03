@@ -90,8 +90,8 @@ function onReady() {
 | on-select            | event   | false    | -                   | The function that gets called when a file is selected                 |
 | on-connection-select | event   | false    | -                   | The function that gets called when a connection is selected           |
 | title                | string  | false    | Apideck File Picker | Title shown in the modal                                              |
-| subTitle             | string  | false    | Select a file       | Subtitle shown in the modal                                           |
+| sub-title            | string  | false    | Select a file       | Subtitle shown in the modal                                           |
 | show-attribution     | boolean | false    | true                | Show "Powered by Apideck" in the backdrop of the modal backdrop       |
 | open                 | boolean | false    | false               | Opens the file picker if set to true                                  |
-| onClose              | event   | false    | -                   | Function that gets called when the modal is closed                    |
+| on-close             | event   | false    | -                   | Function that gets called when the modal is closed                    |
 | file-to-save         | file    | false    | -                   | Forces "Upload" mode to select the folder to upload the provided file |
